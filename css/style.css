@@ -85,7 +85,7 @@ img {
   }
 }
 
-.page-content {
+.page-main {
   background-color: #e8e8e8;
 }
 
@@ -119,6 +119,14 @@ img {
 .page-header p {
   margin-top: 30px;
   margin-bottom: 30px;
-
+  
   color: #786d59;
 }
+
+.page-content {
+  width: 444px;
+  margin: 0 auto;
+  
+  background-color: #ffffff;
+}
+
