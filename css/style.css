@@ -130,3 +130,52 @@ img {
   background-color: #ffffff;
 }
 
+.section-content {
+  margin-top: -60px;
+  padding-top: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 20px;
+  margin-top: 0px;
+  padding: 22px 18px;
+  padding-bottom: 21px;
+  border: 2px solid #e5e4e4;
+}
+
+.section-title {
+  margin: 0;
+  
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.headings-toggle {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  
+  border: none;
+  background-color: transparent;
+  
+}
+
+.headings-toggle::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  right: 5px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  
+  border-top: 3px solid #9b0c23;
+  border-right: 3px solid #9b0c23;
+  
+  transform: rotate(-45deg);
+}
