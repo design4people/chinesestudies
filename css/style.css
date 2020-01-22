@@ -163,7 +163,6 @@ img {
   border: none;
   background-color: transparent;
   
-  cursor: pointer;
 }
 
 .headings-toggle::before {
@@ -179,11 +178,4 @@ img {
   border-right: 3px solid #9b0c23;
   
   transform: rotate(-45deg);
-}
-
-.headings-toggle:hover::before {
-  top: 0px;
-  transform: rotate(135deg);
-  /* transition-property: transform, top; */
-  transition-duration: 0.5s;
 }
