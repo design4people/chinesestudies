@@ -238,3 +238,15 @@ img {
   padding-top: 24px; 
   border-top: 1px solid #e5e4e4;
 }
+
+.present-link {
+  display: inline-block;
+  padding: 7px 28px;
+  border: 1px solid #9b0c23;
+  border-radius: 20px;
+  
+  text-decoration: none;
+  
+  font-size: 16px;
+  color: #9b0c23;
+}
