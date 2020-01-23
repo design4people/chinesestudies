@@ -239,6 +239,19 @@ img {
   border-top: 1px solid #e5e4e4;
 }
 
+.present__picture {
+  display: inline-block;
+  width: 368px;
+  height: 216px;
+  overflow: hibben;
+}
+
+.present__image {
+  height: 216px;
+  width: auto;
+  object-fit: cover;
+}
+
 .present-link {
   display: inline-block;
   padding: 7px 28px;
