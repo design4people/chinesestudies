@@ -131,11 +131,13 @@ img {
 }
 
 .section-content {
-  margin-top: -60px;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-.section-content--first
+.section-content:first-child {
+  margin-top: -60px;
+}
 
 .section-header {
   display: flex;
@@ -217,7 +219,7 @@ img {
   background-color: #9b0c23;
 }
 
-.headings-list__item--first {
+.headings-list__item:first-child {
   font-weight: bold;
 }
 
@@ -226,6 +228,6 @@ img {
   color: #111111;
 }
 
-.headings-list__item--first a {
+.headings-list__item:first-child a {
   color: #9b0c23;
 }
