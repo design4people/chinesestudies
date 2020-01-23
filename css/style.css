@@ -232,7 +232,7 @@ img {
   color: #9b0c23;
 }
 
-.present-content {
+.present {
   margin-left: 38px;
   margin-right: 38px;
   padding-top: 24px; 
@@ -252,7 +252,7 @@ img {
   object-fit: cover;
 }
 
-.present-link {
+.present__link {
   display: inline-block;
   padding: 7px 28px;
   border: 1px solid #9b0c23;
