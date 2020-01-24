@@ -152,10 +152,27 @@ img {
 
 .section-title {
   margin: 0;
-  
+
   font-weight: normal;
   line-height: 24px;
   font-size: 20px;
+}
+
+.present .section-title {
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.present .section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 44px;
+  height: 2px;
+  
+  background-color: #9b0c23;
 }
 
 .headings-list__toggle {
