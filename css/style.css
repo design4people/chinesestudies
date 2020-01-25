@@ -86,7 +86,10 @@ img {
 }
 
 .page-main {
-  background-color: #e8e8e8;
+  padding-bottom: 50px;
+  
+  background-color: #f7f7f7;
+  /* background-color: gradient; */
 }
 
 .page-header {
@@ -323,9 +326,33 @@ img {
 }
 
 .issn-list__item--online,
-.issn-list__item--print {  
+.issn-list__item--print {
   font-size: 14px;
   line-height: 24px;
   
   color: #9b0c23;
+}
+
+.page-footer {
+  width: auto;
+  margin: 0;
+  
+  min-height: 50px;
+  background-color: #ffffff;
+}
+
+.page-footer__wrapper {
+  width: 444px;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  padding: 13px 0;
+  
+  text-align: center;
+  
+  font-size: 11px;
+  line-height: 24px;
+  color: #786d59;
 }
