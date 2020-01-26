@@ -85,6 +85,22 @@ img {
   }
 }
 
+.main-nav__toggle {
+  position: absolute;
+  
+  top: 0;
+  right: 0;
+  
+  display: block;
+  margin-top: 44px;
+  
+  width: 30px;
+  height: 23px;
+  
+  border: none;
+  background-color: #faecc7;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -116,32 +132,89 @@ img {
   }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  
-  top: 0;
-  right: 0;
-  
-  display: block;
-  margin-top: 44px;
-  
-  width: 30px;
-  height: 23px;
-  
-  border: none;
-  background-color: #faecc7;
-}
-
-.nav-list {
+.nav-list,
+.lang-list {
   padding: 0;
+  padding-top: 25px;
   
   list-style: none;
 }
 
+.nav-list__item,
+.lang-list__item {
+  height: 24px;
+}
+
+.nav-list a {
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+  font-size: 15px;
+  line-height: 24px;
+  color: #786d59;
+  text-decoration: none;
+}
+
 @media (min-width: 1200px) {
-  .nav-list {
+  .nav-list,
+  .lang-list  {
     display: flex;
+    
+    padding-top: 50px;
   }
+  
+  .nav-list {
+    margin-right: 30px;
+  }
+  
+  .lang-list {
+    width: 72px;
+    
+    justify-content: space-between;
+  }
+  
+  .nav-list__item--active a {
+    position: relative;
+    color: #9b0c23;
+  }
+  
+  .nav-list__item--active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    
+    width: 44px;
+    height: 2px;
+    
+    background-color: #9b0c23;
+  }
+}
+
+.nav-sublist,
+.nav-second__list {
+  display: none;
+}
+
+.lang-list__item a {
+  display: block;
+  width: 28px;
+  height: 18px;
+  margin-top: 3px;
+  
+  background-color: #555555;
+}
+
+
+.lang-list__item .lang--ua {
+  background: url("../img/ukraine.svg") center no-repeat;
+  background-size: cover;
+}
+
+.lang-list__item .lang--en {
+  background: url("../img/united-kingdom.svg") center no-repeat;
+  background-size: cover;
 }
 
 .main-content {
