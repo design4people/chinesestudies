@@ -37,9 +37,7 @@ img {
 .site-header {
   width: auto;
   margin: 0 auto;
-  padding-bottom: 50px;
-  
-  /* min-height: 110px; */
+  padding-bottom: 30px;
   
   background-color: #faecc7;
 }
@@ -54,7 +52,7 @@ img {
 
 @media (min-width: 1200px) {
   .site-header {
-    padding-bottom: 86px;
+    padding-bottom: 60px;
   }
   
   .site-header__wrapper {
@@ -126,7 +124,7 @@ img {
   margin: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .main-nav--closed .main-nav__list {
     display: none;
   }
@@ -230,8 +228,8 @@ img {
 }
 
 .page-title,
-.page-header p {
-  display: block;
+.page-intro {
+  /* display: block; */
   width: 444px;
   margin: 0 auto;
   text-align: center;
@@ -240,16 +238,18 @@ img {
 .page-title {
   font-size: 30px;
   line-height: 52px;
-  font-weight: 300;
-}
-
-.page-title span {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.page-header p {
-  margin-top: 25px;
+.page-title span {
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.page-intro {
+  margin-top: 15px;
   margin-bottom: 25px;
   
   color: #786d59;
@@ -278,12 +278,12 @@ img {
   }
 
   .page-title,
-  .page-header p {
+  .page-intro {
     width: 1170px;
   }
 
   .page-title {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 72px;
   }
   
@@ -292,12 +292,13 @@ img {
   }
   
   .page-header span {
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .page-intro {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     
     color: #786d59;
   }
