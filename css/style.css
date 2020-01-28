@@ -128,7 +128,7 @@ img {
 
 @media (max-width: 767px) {
   .main-nav--closed .main-nav__list {
-    /* display: none; */
+    display: none;
   }
 }
 
@@ -229,8 +229,7 @@ img {
   padding-bottom: 110px;
 }
 
-.page-header b,
-.page-header h1,
+.page-title,
 .page-header p {
   display: block;
   width: 444px;
@@ -238,16 +237,14 @@ img {
   text-align: center;
 }
 
-.page-header b {
+.page-title {
   font-size: 30px;
+  line-height: 52px;
+  font-weight: 300;
 }
 
-.page-header h1 {
-  margin-top: 30px;
-  
-  font-size: 30px;
+.page-title span {
   font-weight: bold;
-  line-height: 52px;
   text-transform: uppercase;
 }
 
@@ -280,46 +277,54 @@ img {
     padding-bottom: 170px;
   }
 
-  .page-header b,
-  .page-header h1,
+  .page-title,
   .page-header p {
     width: 1170px;
   }
 
-  .page-header b {
+  .page-title {
     font-size: 36px;
-  }
-
-  .page-header h1 {
-    /* margin-top: 30px; */
-    
-    font-size: 48px;
     line-height: 72px;
   }
+  
+  .page-title br {
+    display: inline;
+  }
+  
+  .page-header span {
+    font-size: 48px;
+  }
 
-  .page-header p {
+  .page-intro {
     margin-top: 25px;
     margin-bottom: 50px;
     
     color: #786d59;
   }
   
-  .page-header br {
+  .page-intro br {
     display: none;
   }
 }
 
-.page-content {
+.page-main__wrapper {
   width: 444px;
   margin: 0 auto;
   
+  box-shadow: 0 3px 32px 9px rgba(0,0,0,0.15);
+}
+
+.page-content {
   background-color: #ffffff;
 }
 
 @media (min-width: 1200px) {
-  .page-content {
-    width: 1200px;
+  .page-main__wrapper {
+    width: 1260px;
     margin-top: -90px;
+  }
+  
+  .page-content {
     padding: 0 30px;
     
     display: flex;
@@ -614,14 +619,14 @@ img {
   }
 }
 
-.main-footer {
+.page-footer {
   margin: 0 auto;
   width: 444px;
   
   background-color: #d6c492;
 }
 
-.main-footer__list {
+.page-footer__list {
   margin: 0 38px;
   list-style: none;
   padding: 14px 0 11px 0;
@@ -639,8 +644,19 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .main-footer {
-    width: 1260px
+  .page-footer {
+    width: 1200px;
+    padding: 0 30px;
+  }
+  
+  .page-footer__list {
+    justify-content: center;
+  }
+  
+  .issn-list__item--online,
+  .issn-list__item--print {
+    font-size: 16px;
+    padding: 0 15px;
   }
 }
 
