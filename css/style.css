@@ -65,14 +65,16 @@ img {
 }
 
 .site-header__logo {
-  display: inline-block;
-  margin-top: 30px;
+  display: block;
+  padding-top: 31px;
+  width: 176px;
   height: 39px;
 }
 
 @media (min-width: 1200px) {
   .site-header__logo {
     margin-left: -5px;
+    padding-top: 32px;
     width: 230px;
     height: 48px;
   }
@@ -85,13 +87,10 @@ img {
 
 .main-nav__toggle {
   position: absolute;
-  
-  top: 0;
+  top: 44px;
   right: 0;
   
   display: block;
-  margin-top: 44px;
-  
   width: 30px;
   height: 23px;
   
@@ -140,7 +139,7 @@ img {
 
 .nav-list__item,
 .lang-list__item {
-  height: 24px;
+  height: 44px;
 }
 
 .nav-list a {
@@ -153,6 +152,23 @@ img {
   color: #786d59;
   text-decoration: none;
 }
+
+  .nav-list__item--active a {
+    position: relative;
+    color: #9b0c23;
+  }
+  
+  .nav-list__item--active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    
+    width: 44px;
+    height: 2px;
+    
+    background-color: #9b0c23;
+  }
 
 @media (min-width: 1200px) {
   .nav-list,
@@ -172,21 +188,13 @@ img {
     justify-content: space-between;
   }
   
-  .nav-list__item--active a {
-    position: relative;
-    color: #9b0c23;
+  .nav-list__item,
+  .lang-list__item {
+    height: 24px;
   }
   
   .nav-list__item--active a::after {
-    content: "";
-    position: absolute;
-    left: 0;
     bottom: -8px;
-    
-    width: 44px;
-    height: 2px;
-    
-    background-color: #9b0c23;
   }
 }
 
@@ -203,7 +211,6 @@ img {
   
   background-color: #555555;
 }
-
 
 .lang-list__item .lang--ua {
   background: url("../img/ukraine.svg") center no-repeat;
@@ -409,12 +416,12 @@ img {
     border: none;
   }
   
-  .contents .content__title {
+  .headings .content__title {
     position: relative;
     padding-bottom: 16px;
   }
 
-  .contents .content__title::before {
+  .headings .content__title::before {
     content: "";
     position: absolute;
     left: 0;
@@ -425,14 +432,14 @@ img {
     background-color: #9b0c23;
   }
   
-  .contents .content__title,
+  .headings .content__title,
   .description .content__title,  
   .curent-issue .content__title {
     margin-bottom: 30px;
   }
 }
 
-.headings-list__toggle {
+.list__toggle {
   position: relative;
   display: block;
   width: 18px;
@@ -444,7 +451,7 @@ img {
   cursor: pointer;
 }
 
-.headings-list__toggle::before {
+.list__toggle::before {
   content: "";
   position: absolute;
   box-sizing: border-box;
@@ -459,7 +466,7 @@ img {
   transform: rotate(-45deg);
 }
 
-.headings-list__toggle:hover::before {
+.list__toggle:hover::before {
   top: 0px;
   transform: rotate(135deg);
   /* transition-property: transform, top; */
@@ -467,24 +474,24 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .contents {
+  .headings {
     width: 370px;
     margin-right: 30px;
   }
   
-  .headings-list__toggle {
+  .list__toggle {
     display: none;
   }
 }
 
-.headings-list {
+.headings__list {
   margin: 0 20px;
   padding: 0 18px;
   
   list-style: none;
 }
 
-.headings-list__item {
+.headings__item {
   position: relative;
   
   /* padding-top: 24px; */
@@ -492,7 +499,7 @@ img {
   padding-left: 14px;
 }
 
-.headings-list__item::before {
+.headings__item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -504,26 +511,26 @@ img {
   background-color: #9b0c23;
 }
 
-.headings-list__item:first-child {
+.headings__item:first-child {
   font-weight: bold;
 }
 
-.headings-list__item a {
+.headings__item a {
   text-decoration: none;
   color: #111111;
 }
 
-.headings-list__item:first-child a {
+.headings__item:first-child a {
   color: #9b0c23;
 }
 
 @media (min-width: 1200px) {
-  .headings-list {
+  .headings__list {
     margin: 0;
     padding: 0;
   }
   
-  .headings-list__item {
+  .headings__item {
     margin-top: 12px; 
     padding-right: 20px;
     
