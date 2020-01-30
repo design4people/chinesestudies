@@ -37,7 +37,6 @@ img {
 .site-header {
   width: auto;
   margin: 0 auto;
-  padding-bottom: 30px;
   
   background-color: #faecc7;
 }
@@ -45,14 +44,16 @@ img {
 .site-header__wrapper {
   position: relative;
   width: 444px;
+  min-height: 70px;
   margin: 0 auto;
+  padding-bottom: 30px;
   
-  justify-content: space-between;
+  background-color: #faecc7;
 }
 
 @media (min-width: 1200px) {
   .site-header {
-    padding-bottom: 60px;
+    /* padding-bottom: 20px; */
   }
   
   .site-header__wrapper {
@@ -61,6 +62,9 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 20px;
+    
+    justify-content: space-between;
   }
 }
 
@@ -194,7 +198,7 @@ img {
   }
   
   .nav-list__item--active a::after {
-    bottom: -8px;
+    bottom: -5px;
   }
 }
 
@@ -226,12 +230,17 @@ img {
   padding-bottom: 50px;
   
   background-color: #f7f7f7;
-  /* background-color: gradient; */
 }
 
 .page-main__header {
+  margin: 0 auto;
+  width: 100%;
+  height: 310px;
+  
+  background: url("../img/background-chinese-studies.jpg") center no-repeat;
   background-color: #faecc7;
-  padding-bottom: 110px;
+  background-size: cover;
+  background-position: right;
 }
 
 .page-main__title,
@@ -263,7 +272,7 @@ img {
 }
 
 .page-main__header .message {
-  display: flex;
+  display: none;
   
   justify-content: center; 
 }
@@ -281,7 +290,7 @@ img {
 
 @media (min-width: 1200px) {
 .page-main__header {
-    padding-bottom: 170px;
+    height: 440px;
   }
 
   .page-main__title,
@@ -359,6 +368,7 @@ img {
   border: 2px solid #e5e4e4;
 }
 
+.article .content__header,
 .description .content__header,
 .curent-issue .content__header  {
   display: block;
@@ -375,6 +385,7 @@ img {
   line-height: 24px;
 }
 
+.article .content__title,
 .description .content__title,
 .curent-issue .content__title  {
   position: relative;
@@ -382,6 +393,7 @@ img {
   margin-bottom: 20px;
 }
 
+.article .content__title::before,
 .description .content__title::before,
 .curent-issue .content__title::before  {
   content: "";
@@ -539,11 +551,16 @@ img {
   }
 }
 
+.article,
 .description,
 .curent-issue {
   margin-left: 38px;
   margin-right: 38px;
   padding-top: 24px; 
+}
+
+.description,
+.curent-issue {
   border-top: 1px solid #e5e4e4;
 }
 
@@ -552,6 +569,7 @@ img {
 }
 
 @media (min-width: 1200px) {
+  .article,
   .description,
   .curent-issue {
     margin-left: 0;
