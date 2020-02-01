@@ -236,11 +236,17 @@ img {
   margin: 0 auto;
   width: 100%;
   height: 310px;
-  
+}
+
+.start-page .page-main__header {
   background: url("../img/background-chinese-studies.jpg") center no-repeat;
-  background-color: #faecc7;
   background-size: cover;
   background-position: right;
+  background-color: #faecc7;
+}
+
+.inner-page .page-main__header {
+  background-color: #faecc7;
 }
 
 .page-main__title,
@@ -252,10 +258,20 @@ img {
 }
 
 .page-main__title {
+  padding-top: 10px;
+  font-weight: 700;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.start-page .page-main__title {
   font-size: 30px;
   line-height: 52px;
-  font-weight: 700;
-  text-transform: uppercase;
+}
+
+.inner-page .page-main__title {
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .page-main__title span {
@@ -265,9 +281,26 @@ img {
 }
 
 .page-main__intro {
+  color: #786d59;
+}
+
+.page-main__intro span {
+  color: #111111;
+}
+
+.start-page .page-main__intro {
   margin-top: 15px;
   margin-bottom: 25px;
-  
+}
+
+.inner-page .page-main__intro {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.inner-page .page-main__intro a {
+  text-decoration: none;
   color: #786d59;
 }
 
@@ -289,34 +322,37 @@ img {
 }
 
 @media (min-width: 1200px) {
-.page-main__header {
+  .page-main__header {
     height: 440px;
   }
-
+  
   .page-main__title,
   .page-main__intro {
     width: 1170px;
   }
-
-  .page-main__title {
+  
+  .start-page .page-main__title {
     font-size: 48px;
     line-height: 72px;
   }
   
+  .inner-page .page-main__title {
+    padding-top: 55px;
+  }
+  
   .page-main__title br {
-    display: inline;
+    display: none;
   }
   
   .page-main__header span {
-    font-size: 36px;
-    line-height: 36px;
+    /* font-size: 36px; */
+    /* line-height: 36px; */
   }
 
-  .page-main__intro {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    
-    color: #786d59;
+   .inner-page .page-main__intro {
+    /* margin-top: 10px; */
+    /* margin-bottom: 40px; */  
+    /* color: #786d59; */
   }
   
   .page-main__intro br {
@@ -331,6 +367,14 @@ img {
   box-shadow: 0 3px 32px 9px rgba(0,0,0,0.15);
 }
 
+.start-page .page-main__wrapper {
+  margin-top: -60px;
+}
+
+.inner-page .page-main__wrapper {
+  margin-top: -147px;
+}
+
 .page-content {
   background-color: #ffffff;
 }
@@ -338,7 +382,14 @@ img {
 @media (min-width: 1200px) {
   .page-main__wrapper {
     width: 1260px;
+  }
+  
+  .start-page .page-main__wrapper {
     margin-top: -90px;
+  }
+  
+  .inner-page .page-main__wrapper {
+    margin-top: -232px;
   }
   
   .page-content {
@@ -353,28 +404,22 @@ img {
   padding-bottom: 30px;
 }
 
-.content__section:first-child {
-  margin-top: -60px;
+.content__header  {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none; 
 }
 
-.content__header {
+.headings .content__header {
   display: flex;
   justify-content: space-between;
   
   margin: 0 20px;
   margin-top: 0px;
-  padding: 22px 18px;
-  padding-bottom: 21px;
+  padding: 20px 18px;
+  padding-bottom: 22px;
   border: 2px solid #e5e4e4;
-}
-
-.article .content__header,
-.description .content__header,
-.curent-issue .content__header  {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none; 
 }
 
 .content__title {
@@ -385,17 +430,40 @@ img {
   line-height: 24px;
 }
 
-.article .content__title,
-.description .content__title,
-.curent-issue .content__title  {
+/* .content__title, */
+/* .description .content__title, */
+/* .curent-issue .content__title  { */
+  /* position: relative; */
+  /* padding-bottom: 16px; */
+  /* margin-bottom: 20px; */
+/* } */
+
+.content__title {
   position: relative;
   padding-bottom: 16px;
   margin-bottom: 20px;
 }
 
-.article .content__title::before,
-.description .content__title::before,
-.curent-issue .content__title::before  {
+.headings .content__title {
+  /* margin-bottom: 20px; */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* .content__title::before, */
+/* .description .content__title::before, */
+/* .curent-issue .content__title::before  { */
+  /* content: ""; */
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: 0; */
+  /* width: 44px; */
+  /* height: 2px; */
+  
+  /* background-color: #9b0c23; */
+/* } */
+
+.content__title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -406,6 +474,10 @@ img {
   background-color: #9b0c23;
 }
 
+.headings .content__title::before {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .content__section {
     padding-top: 50px;
@@ -413,7 +485,6 @@ img {
   }
   
   .content__section:first-child {
-    margin-top: 0px;
     margin-left: 15px;
   }
   
@@ -421,7 +492,8 @@ img {
     margin-right: 15px;
   }
   
-  .content__header {
+  .content__header,
+  .headings .content__header  {
     display: block;
     margin: 0;
     padding: 0;
@@ -432,21 +504,26 @@ img {
     position: relative;
     padding-bottom: 16px;
   }
-
+  
   .headings .content__title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 44px;
-    height: 2px;
+    display: block;
+    /* content: ""; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* width: 44px; */
+    /* height: 2px; */
     
-    background-color: #9b0c23;
+    /* background-color: #9b0c23; */
   }
   
-  .headings .content__title,
-  .description .content__title,  
-  .curent-issue .content__title {
+  /* .headings .content__title, */
+  /* .description .content__title,   */
+  /* .curent-issue .content__title { */
+    /* margin-bottom: 30px; */
+  /* } */
+  
+  .content__title {
     margin-bottom: 30px;
   }
 }
