@@ -420,17 +420,6 @@ img {
     display: none;
   }
   
-  .page-main__header span {
-    /* font-size: 36px; */
-    /* line-height: 36px; */
-  }
-
-   .inner-page .page-main__intro {
-    /* margin-top: 10px; */
-    /* margin-bottom: 40px; */  
-    /* color: #786d59; */
-  }
-  
   .page-main__intro br {
     display: none;
   }
@@ -485,16 +474,9 @@ img {
 }
 
 .content__section {
-  /* padding-top: 20px; */
-  padding-bottom: 30px;
-}
-
-/**/
-.content__section {
   margin-left: 38px;
   margin-right: 38px;
-  /* padding-top: 24px;  */
-  /* padding-top: 30px;  */
+  padding-bottom: 30px;
 }
 
 .content__header  {
@@ -585,21 +567,7 @@ img {
   
   .headings .content__title::before {
     display: block;
-    /* content: ""; */
-    /* position: absolute; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* width: 44px; */
-    /* height: 2px; */
-    
-    /* background-color: #9b0c23; */
   }
-  
-  /* .headings .content__title, */
-  /* .description .content__title,   */
-  /* .curent-issue .content__title { */
-    /* margin-bottom: 30px; */
-  /* } */
   
   .content__title {
     margin-bottom: 30px;
@@ -652,8 +620,6 @@ img {
 }
 
 .headings__list {
-  /* margin: 0 20px; */
-  /* padding: 0 18px; */
   margin: 0;
   padding: 0;
   
@@ -662,8 +628,6 @@ img {
 
 .headings__item {
   position: relative;
-  
-  /* padding-top: 24px; */
   margin-top: 24px; 
   padding-left: 14px;
 }
@@ -714,20 +678,11 @@ img {
   
   .headings__item {
     margin-top: 12px; 
-    /* padding-top: 12px; */
     padding-right: 20px;
     
     font-size: 14px;
     line-height: 18px;
   }
-}
-
-/* .article, */
-.description,
-.curent-issue {
-  /* margin-left: 38px; */
-  /* margin-right: 38px; */
-  /* padding-top: 24px;  */
 }
 
 .description,
