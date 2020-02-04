@@ -621,8 +621,20 @@ img {
 
 @media (min-width: 1200px) {
   .headings__list {
+    position: relative;
     margin: 0;
     padding: 0;
+  }
+  
+  .headings__list::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 1px;
+    height: 100%;
+    
+    background-color: #e5e4e4;
   }
   
   .headings__item {
@@ -650,6 +662,21 @@ img {
 
 .description__content {
   position: relative;
+  padding-top: 216px;
+}
+
+.description__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 368px;
+  height: 216px;
+  background: url("../img/chinese-lanterns.jpg") right no-repeat;
+  background-size: cover;
+  overflow: hibben;  
+  
+  background-color: rgba(255,0,0,0.5);
 }
 
 @media (min-width: 1200px) {
@@ -670,12 +697,21 @@ img {
     content: "";
     position: absolute;
     top: 0;
-    left: -30px;
-    width: 1px;
-    height: 100%;
-    
-    background-color: #e5e4e4;
+    left: 0;
+    width: 470px;
+    height: 216px;
   }
+  
+  /* .description__content::before { */
+    /* content: ""; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: -30px; */
+    /* width: 1px; */
+    /* height: 100%; */
+    
+    /* background-color: #e5e4e4; */
+  /* } */
   
   .curent-issue {
     width: 270px;
