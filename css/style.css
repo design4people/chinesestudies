@@ -1081,7 +1081,42 @@ img {
   }
 }
 
-.defenition__list {}
+.defenition__list {
+  
+  font-size: 15px;
+  line-height: 30px;
+  
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+.defenition__list tr:nth-child(2n-1) {
+  background-color: #e5e4e4;
+}
+
+.defenition__list tr:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+
+.defenition__term {
+  font-weight: 300;
+  
+  border: 1px solid #000000;
+}
+
+.defenition__data {
+  border: 1px solid #000000;
+}
+
+.defenition__abstract {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .defenition__abstract {
+    display: table-cell;
+  }
+}
 
 .page-footer {
   margin: 0 auto;
