@@ -19,70 +19,94 @@
             <img class="site-header__logo-image" src="img/logo-mobile.png" width="176" height="39" alt="Chinese studies Journal logo">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="about.html">About</a>
-            </li>
-            <li class="nav-list__item nav-list__item--active item-sublist">
-              <a href="arhive">Archive</a>
-              <ul class="nav-sublist2">
-                <li class="nav-sublist2__item">2019
-                  <ul class="nav-sublist3">
-                    <li class="nav-sublist3__item">№ 1</li>
-                  </ul>
-                </li>
-                <li class="nav-sublist2__item">2018
-                  <ul class="nav-sublist3">
-                    <li class="nav-sublist3__item">№ 1</li>
-                    <li class="nav-sublist3__item">№ 2</li>
-                  </ul>
-                </li>
-                <li class="nav-sublist2__item">2017
-                  <ul class="nav-sublist3">
-                    <li class="nav-sublist3__item">№ 1-2</li>
-                  </ul>
-                </li>
-                <li class="nav-sublist2__item">2016
-                  <ul class="nav-sublist3">
-                    <li class="nav-sublist3__item">№ 1-2</li>
-                  </ul>
-                </li>
-                <li class="nav-sublist2__item">2015
-                  <ul class="nav-sublist3">
-                    <li class="nav-sublist3__item">№ 1-2</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">Editorial Board</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#">For Authors</a>
-              <ul class="nav-sublist2">
-                <li class="nav-sublist2__item">Publication Ethics</li>
-              </ul>
-            </li>
-            <li class="nav-list__item">
-              <a href="search.html">Search</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="contacts.html">Contacts</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list lang-list">
-            <li class="lang-list__item">
-              <a class="lang--ua" href="ua.html"><span class="visually-hidden">UA</span></a>
-            </li>
-            <li class="lang-list__item">
-              <a class=" lang--en" href="ua.html"><span class="visually-hidden">EN</span></a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="index.html">Home</a>
+              </li>
+              <li class="nav-list__item nav-list__item--active">
+                <!-- <a href="about.html">About</a> -->
+                <span>About</span>
+              </li>
+              <li class="nav-list__item item-sublist21 nav-sublist21--closed">
+                <a class="nav-list__link" href="archive.html">Archive</a>
+                <button class="nav-sublist21__toggle"><span class="visually-hidden">Open submenu</span></button>
+                <ul class="nav-sublist2">
+                  <li class="nav-sublist2__item">
+                    <a class="nav-sublist2__link" href="#">2019</a>
+                    <ul class="nav-sublist3">
+                      <li class="nav-sublist3__item">
+                        <a class="nav-sublist3__link" href="#">№ 1</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-sublist2__item">
+                    <a class="nav-sublist2__link" href="#">2018</a>
+                    <ul class="nav-sublist3">
+                      <li class="nav-sublist3__item">
+                        <a class="nav-sublist3__link" href="#">№ 1</a>
+                      </li>
+                      <li class="nav-sublist3__item">
+                        <a class="nav-sublist3__link" href="#">№ 2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-sublist2__item">
+                    <a class="nav-sublist2__link" href="#">2017</a>
+                    <ul class="nav-sublist3">
+                      <li class="nav-sublist3__item">
+                        <a class="nav-sublist3__link" href="#">№ 1-2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-sublist2__item">
+                    <a class="nav-sublist2__link" href="#">2016</a>
+                    <ul class="nav-sublist3">
+                      <li class="nav-sublist3__item">
+                        <a class="nav-sublist3__link" href="#">№ 1-2</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-sublist2__item">
+                    <a class="nav-sublist2__link" href="#">2015</a>
+                    <ul class="nav-sublist3">
+                      <li class="nav-sublist3__item">
+                        <a class="nav-sublist3__link" href="#">№ 1-2</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Editorial Board</a>
+              </li>
+              <li class="nav-list__item item-sublist22 nav-sublist22--closed">
+                <a class="nav-list__link" href="#">For Authors</a>
+                <button class="nav-sublist22__toggle"><span class="visually-hidden">Open submenu</span></button>
+                <ul class="nav-sublist2">
+                  <li class="nav-sublist2__item">
+                    <a class="nav-sublist2__link" href="#">Publication Ethics</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="search.html">Search</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list lang-list">
+              <li class="lang-list__item">
+                <a class="lang-list__link--ua" href="ua.html"><span class="visually-hidden">UA</span></a>
+              </li>
+              <li class="lang-list__item">
+                <a class=" lang-list__link--en" href="ua.html"><span class="visually-hidden">EN</span></a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -99,11 +123,11 @@
               <p class="content__field"><span class="content__label">Heading:</span> <span class="content__item"><a href="#">History, Philosophy, Science and Culture of China</a></span></p>
             </header>
             <table class="defenition__list">
-              <tr>
+              <tr class="defenition__row">
                 <th class="defenition__term">
                   Title
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   Ukrainians in Shanghai (1930–1940)
                 </td>
               </tr>
@@ -111,7 +135,7 @@
                 <th class="defenition__term">
                   Publication Type
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   Journal Article
                 </td>
               </tr>
@@ -119,7 +143,7 @@
                 <th class="defenition__term">
                   Year of Publication
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   2018
                 </td>
               </tr>
@@ -127,7 +151,7 @@
                 <th class="defenition__term">
                   Authors
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   <a href="#">Shevchenko, O</a>
                 </td>
               </tr>
@@ -135,7 +159,7 @@
                 <th class="defenition__term">
                   Abbreviated Key Title
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   Kitaêznavčì doslìdžennâ
                 </td>
               </tr>
@@ -143,7 +167,7 @@
                 <th class="defenition__term">
                   DOI
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   <a href="#">10.15407/chinesest2018.02.073</a>
                 </td>
               </tr>
@@ -151,7 +175,7 @@
                 <th class="defenition__term">
                   Issue
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   <a>2</a>
                 </td>
               </tr>
@@ -159,7 +183,7 @@
                 <th class="defenition__term">
                   Section
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   History, Philosophy, Science and Culture of China
                 </td>
               </tr>
@@ -167,7 +191,7 @@
                 <th class="defenition__term">
                   Pagination
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   73-98
                 </td>
               </tr>
@@ -175,7 +199,7 @@
                 <th class="defenition__term">
                   Date Published
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   12/2018
                 </td>
               </tr>
@@ -183,7 +207,7 @@
                 <th class="defenition__term">
                   Language
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   Ukrainian
                 </td>
               </tr>
@@ -191,7 +215,7 @@
                 <th class="defenition__term">
                   Abstract
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   The article deals with the life of Ukrainians in Shanghai during the period of 1930–1940. In the paper we attempt to identify and unify in separate list the representatives of Ukrainian community amongst all those nationalities that escaped from Russian Empire after the Revolution of 1917. For this, an attempt is made to analyze the social activity of Ukrainian community in Shanghai including its movements from the northern cities of China down to the south up to Philippines islands. The particular attention in the paper is paid to personalities with Ukrainian origin that contributed into architecture, culture and style of the modern Shanghai. The article includes also a list of those Ukrainians who lived in Shanghai during 1930–1940.
                 </td>
               </tr>
@@ -199,7 +223,7 @@
                 <th class="defenition__term">
                   Keywords
                 </th>
-                <td class="defenition__description">
+                <td class="defenition__data">
                   China, community, migration, Shanghai, social life, Ukrainians
                 </td>
               </tr>
@@ -258,8 +282,11 @@
     </main>
     <footer class="site-footer">
       <div class="site-footer__wrapper">
+        <p class="site-footer__license"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Ліцензія Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0" class="autofloat-even "></a> Цей твір ліцензовано на умовах <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">Ліцензії Creative Commons Із Зазначенням Авторства — Некомерційна — Без Похідних 4.0 Міжнародна</a>.</p>
+        
         <p class="site-footer__copyright">© 2020 Chinese studies</p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
