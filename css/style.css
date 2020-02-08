@@ -1082,12 +1082,21 @@ img {
 }
 
 .defenition__list {
+  font-size: 14px;
+  line-height: 20px;
+  color: ##111111;
   
-  font-size: 15px;
-  line-height: 30px;
-  
-  border: 1px solid #000000;
   border-collapse: collapse;
+}
+
+.defenition__list td {
+  display: flex;
+  padding: 15px 10px;
+}
+
+.defenition__list .defenition__abstract {
+    display: table-cell;
+  padding: 15px 10px;
 }
 
 .defenition__list tr:nth-child(2n-1) {
@@ -1100,22 +1109,56 @@ img {
 
 .defenition__term {
   font-weight: 300;
-  
-  border: 1px solid #000000;
+  width: 50%;
+}
+
+.defenition__abstract .defenition__term {
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .defenition__data {
-  border: 1px solid #000000;
+  width: 50%;
 }
 
-.defenition__abstract {
-  display: none;
+.defenition__data a {
+  color: #9b0c23;
+  text-decoration: none;
+}
+
+.defenition__keywords {
+  color: #9b0c23;
 }
 
 @media (min-width: 1200px) {
   .defenition__abstract {
-    display: table-cell;
   }
+}
+
+.references__content {
+  font-size: 12px;
+  line-height: 2;
+  color: #111111;
+}
+
+.references__content a {
+  color: #9b0c23;
+}
+
+.references__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.references__item {
+  margin: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.article .content__section {
+  padding-bottom: 50px;
 }
 
 .page-footer {
