@@ -1070,6 +1070,7 @@ img {
 @media (min-width: 1200px) {
   .content__field {
     margin-top: -10px;
+    margin-bottom: 20px;
   }
   
   .content__label {
@@ -1082,6 +1083,8 @@ img {
 }
 
 .defenition__list {
+  width: auto;
+  width: 100%;
   font-size: 14px;
   line-height: 20px;
   color: ##111111;
@@ -1091,12 +1094,15 @@ img {
 
 .defenition__list td {
   display: flex;
-  padding: 15px 10px;
+  padding: 15px 0;
 }
 
 .defenition__list .defenition__abstract {
-    display: table-cell;
-  padding: 15px 10px;
+  display: table-cell;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  line-height: 24px;
 }
 
 .defenition__list tr:nth-child(2n-1) {
@@ -1108,17 +1114,65 @@ img {
 }
 
 .defenition__term {
+  flex-shrink: 0;
+  
+  width: 164px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
   font-weight: 300;
-  width: 50%;
 }
 
 .defenition__abstract .defenition__term {
+  padding: 0;
+  
   font-weight: 700;
-  line-height: 24px;
 }
 
 .defenition__data {
-  width: 50%;
+  width: 164px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.defenition__abstract .defenition__data {
+  padding: 0;
+}
+
+.defenition__data a {
+  word-wrap: break-word;
+}
+
+@media (min-width: 1200px) {
+  .defenition__list .defenition__abstract {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .defenition__term {
+    margin-right: 30px;
+    padding-left: 13px;
+    padding-right: 0;
+    width: 157px;
+  }
+
+  .defenition__abstract .defenition__term {
+    font-weight: 300;
+    padding-left: 13px;
+  }
+  
+  .defenition__data {
+    width: 670px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-right: 300px;
+  }
+  
+  .defenition__abstract .defenition__data {
+    padding-left: 0;
+    padding-right: 300px;
+  }
 }
 
 .defenition__data a {
