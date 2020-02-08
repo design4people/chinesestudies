@@ -1203,12 +1203,20 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  counter-reset: myCounter;
 }
 
 .references__item {
   margin: 0;
   padding: 0;
   padding-right: 10px;
+}
+
+.references__item:before {
+  counter-increment: myCounter;
+  content: counter(myCounter) ". ";
+  display: inline-block;
 }
 
 .article .content__section {
