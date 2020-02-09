@@ -1137,7 +1137,9 @@ img {
 }
 
 .defenition__abstract .defenition__data {
+  display: inline;
   padding: 0;
+  width: auto;
 }
 
 .defenition__data a {
