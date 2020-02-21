@@ -12,18 +12,37 @@
   </head>
   <body class="inner-page search-page">
     <svg display="none">
-      <symbol id="arrow-left" viewBox="0 0 409.6 196.92">
+      <symbol id="arrow-left" viewBox="0 0 100 48.076">
         <g>
-         <rect y="88.75" width="409.6" height="19.42" rx="9.71" ry="9.71"/>
-          <rect x="66.78701" y="53.042507" width="144.93" height="19.42" rx="9.71" ry="9.71" transform="rotate(45)" id="rect3817"/>
-          <rect x="-72.469719" y="-86.204781" width="144.93" height="19.42" rx="9.71" ry="9.71" transform="rotate(135)" id="rect3819"/>
+          <path d="M97.629,26.409H2.371c-1.31,0-2.371-1.062-2.371-2.37l0,0c0-1.309,1.062-2.371,2.371-2.371h95.258
+            c1.31,0,2.371,1.063,2.371,2.371l0,0C100,25.348,98.938,26.409,97.629,26.409z"/>
+          <path d="M22.362,47.382L0.695,25.715c-0.926-0.926-0.926-2.427,0-3.353l0,0c0.926-0.926,2.427-0.926,3.353,0l21.667,21.667
+            c0.926,0.926,0.926,2.427,0,3.353l0,0C24.789,48.308,23.288,48.308,22.362,47.382z"/>
+          <path d="M0.695,22.361L22.363,0.694c0.926-0.926,2.426-0.926,3.352,0l0,0c0.926,0.926,0.926,2.427,0,3.353L4.048,25.714
+            c-0.926,0.926-2.427,0.926-3.353,0l0,0C-0.23,24.788-0.23,23.287,0.695,22.361z"/>
         </g>
       </symbol>
-      <symbol id="arrow-right" viewBox="0 0 409.6 196.92">
+      <symbol id="arrow-right"  viewBox="0 0 100 48.076">
         <g>
-          <rect y="88.75" width="409.6" height="19.42" rx="9.71" ry="9.71"/>
-          <rect x="761.05" y="329.62" width="144.93" height="19.42" rx="9.71" ry="9.71" transform="translate(6.07 -775.24) rotate(45)"/>
-          <rect x="761.05" y="418.38" width="144.93" height="19.42" rx="9.71" ry="9.71" transform="translate(1247.6 -143.84) rotate(135)"/>
+          <path d="M2.371,21.667h95.258c1.31,0,2.371,1.062,2.371,2.371l0,0c0,1.308-1.062,2.371-2.371,2.371H2.371
+            C1.062,26.408,0,25.346,0,24.038l0,0C0,22.729,1.062,21.667,2.371,21.667z"/>
+          <path d="M77.638,0.694l21.667,21.667c0.926,0.926,0.926,2.427,0,3.352l0,0c-0.926,0.926-2.427,0.926-3.353,0L74.285,4.047
+            c-0.926-0.926-0.926-2.427,0-3.353l0,0C75.211-0.231,76.712-0.231,77.638,0.694z"/>
+          <path d="M99.305,25.715L77.637,47.382c-0.926,0.926-2.426,0.926-3.352,0l0,0c-0.926-0.926-0.926-2.427,0-3.353l21.667-21.667
+            c0.926-0.926,2.427-0.926,3.353,0l0,0C100.23,23.288,100.23,24.79,99.305,25.715z"/>
+        </g>
+      </symbol>
+      <symbol id="arrow-poinf-up" viewBox="0 0 100 57.004">
+        <g>
+          <path d="M54.95,2.051l42.997,42.999c2.736,2.735,2.736,7.169,0,9.904c-2.734,2.734-7.168,2.734-9.902,0L50,16.906L11.955,54.952
+            c-2.735,2.734-7.17,2.734-9.904,0s-2.734-7.168,0-9.904L45.049,2.05C46.417,0.683,48.207,0,49.999,0S53.583,0.684,54.95,2.051z"/>
+        </g>
+      </symbol>
+      <symbol id="arrow-point-down" viewBox="0 0 100 57.004">
+        <g>
+          <path d="M45.049,54.953L2.052,11.955c-2.736-2.735-2.736-7.17,0-9.904c2.734-2.734,7.169-2.734,9.902,0L50,40.098L88.045,2.052
+            c2.735-2.734,7.17-2.734,9.904,0c2.734,2.734,2.734,7.168,0,9.904L54.951,54.954c-1.368,1.367-3.158,2.05-4.95,2.05
+            C48.208,57.004,46.417,56.32,45.049,54.953z"/>
         </g>
       </symbol>
     </svg>
@@ -199,14 +218,14 @@
                     <button type="submit" class="search__button">To start biblio searching</button>
                   </div>
                 </fieldset>
-                <fieldset class="search__options">
+                <fieldset class="search__options filters">
                   <legend class="visually-hidden">Search options</legend>
                   <b class="search__message">Show only items where:</b>
-                  <div class="search__options--wrapper">
-                    <div class="search__options--block">
-                      <div class="search__parameter">
-                        <label class="search__label" for="edit-author">Author </label>
-                        <select class="search__select" id="edit-author" name="author">
+                  <div class="search__wrapper">
+                    <div class="filters__block--first">
+                      <div class="filter__parameter">
+                        <label class="filter__label" for="edit-author">Author </label>
+                        <select class="filter__select" id="edit-author" name="author">
                           <option value="any" selected="selected">Any</option>
                           <option value="177">Alai</option>
                           <option value="109">Antoniuk, L.</option>
@@ -223,18 +242,18 @@
                           <option value="228">邱忠堂</option>
                         </select>
                       </div>
-                      <div class="search__parameter">
-                        <label class="search__label" for="edit-type">Type </label>
-                        <select class="search__select" id="edit-type" name="type">
+                      <div class="filter__parameter">
+                        <label class="filter__label" for="edit-type">Type </label>
+                        <select class="filter__select" id="edit-type" name="type">
                           <option value="any" selected="selected">Any</option>
                           <option value="102">Journal Article</option>
                         </select>
                       </div>
                     </div>
-                    <div class="search__options--block">
-                      <div class="search__parameter">
-                        <label class="search__label">Year </label>
-                        <select class="search__select">
+                    <div class="filters__block--second">
+                      <div class="filter__parameter">
+                        <label class="filter__label">Year </label>
+                        <select class="filter__select">
                           <option value="any" selected="selected">Any</option>
                           <option value="2019">2019</option>
                           <option value="2018">2018</option>
@@ -244,9 +263,9 @@
                           <option value="2014">2014</option>
                         </select>
                       </div>
-                      <div class="search__parameter">
-                        <label class="search__label">Term </label>
-                        <select class="search__select">
+                      <div class="filter__parameter">
+                        <label class="filter__label">Term </label>
+                        <select class="filter__select">
                           <option value="any" selected="selected">Any</option>
                           <option value="93">Journal Headings - China and its neighbors</option>
                           <option value="97">Journal Headings - Chinese language and literature</option>
@@ -265,10 +284,10 @@
                         </select>
                       </div>
                     </div>
-                    <div class="search__options--block">
-                      <div class="search__parameter">
-                        <label class="search__label">Keyword </label>
-                        <select class="search__select">
+                    <div class="filters__block--third">
+                      <div class="filter__parameter">
+                        <label class="filter__label">Keyword </label>
+                        <select class="filter__select">
                           <option value="any" selected="selected">Any</option>
                           <option value="508">13th FYP</option>
                           <option value="438">African Renaissance Theory</option>
@@ -282,7 +301,7 @@
                           <option value="949">直面杨绛——一场跨界的对话</option>
                         </select>
                       </div>
-                      <div class="search__parameter">
+                      <div class="filter__parameter filter__apply">
                         <span></span>
                         <button class="content__button" type="button">Filter</button>
                       </div>
@@ -291,7 +310,7 @@
                 </fieldset>
                 <fieldset class="search__options selection">
                   <legend class="visually-hidden">Resetting selection parameters </legend>
-                  <div class="search__options--wrapper">
+                  <div class="search__wrapper">
                     <ul class="selection__list">
                       <li class="selection__item">
                         where <span class="selection__parameter">Term</span> is: <span class="selection__value">Journal Headings - History, Philosophy, Science and Culture of China</span>
@@ -300,7 +319,7 @@
                         and where <span class="selection__parameter">Author</span> is: <span class="selection__value">Antoniuk, L.</span>
                       </li>
                     </ul>
-                    <div class="search__parameter">
+                    <div class="selection__reset">
                       <span></span>
                       <button class="content__button" type="button">Reset</button>
                     </div>
