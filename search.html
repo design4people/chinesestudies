@@ -211,9 +211,9 @@
                   <div class="search__form">
                     <label for="search-field">
                       <span class="visually-hidden">Search field</span>
-                      <div class="search__input--wrap">
+                      <span class="search__input--wrap">
                         <input class="search__input" type="search" name="search-query" id="search-field" maxlength="255" placeholder="Biblio search">
-                      </div>
+                      </span>
                     </label>
                     <button type="submit" class="search__button">To start biblio searching</button>
                   </div>
@@ -323,26 +323,25 @@
                       <span></span>
                       <button class="content__button" type="button">Reset</button>
                     </div>
-                    <!-- <button class="content__button" type="button">Reset</button> -->
                   </div>
                 </fieldset>
               </form>
               <!-- <section> -->
               <div class="search__result">
-                <div class="search__options search__selection">
+                <div id="search__selection" class="search__options search__selection">
                   <!-- <h3 class="visually-hidden">Sorting search results by parameters</h3> -->
                   <p class="search__info">
                     Found 70 results
                   </p>
                   <ul class="search-filter__list">
                     <li class="search-filter__item">
-                      <a class="content__link content__link--direct" href="#">Author</a>
+                      <a class="content__link content__link--direct" href="search__aurhor--reverse.html#search__selection">Author</a>
                     </li>
                     <li class="search-filter__item">
-                      <a class="content__link--hidden" href="#">Title</a>
+                      <a class="content__link--hidden" href="search__title--direct.html#search__selection">Title</a>
                     </li>
                     <li class="search-filter__item">
-                      <a class="content__link--hidden" href="#">Year</a>
+                      <a class="content__link--hidden" href="search__year--direct.html#search__selection">Year</a>
                     </li>
                   </ul>
                 </div>
