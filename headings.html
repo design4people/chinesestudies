@@ -32,6 +32,7 @@
         <a class="site-header__logo" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+            <source media="(min-width: 830px)" srcset="img/logo-desktop.png">
             <img class="site-header__logo-image" src="img/logo-mobile.png" width="176" height="39" alt="Chinese studies Journal logo">
           </picture>
         </a>
@@ -128,16 +129,16 @@
       </div>
     </header>
     <main class="page-main">
-      <header class="page-main__header">
-        <h1 class="page-main__title">History, Philosophy, Science and Culture of China</h1>
+      <header class="page-header">
+        <h1 class="page-header__title">History, Philosophy, Science and Culture of China</h1>
         <p class="breadcrumb"><a href="#">Home</a> / <span>History, Philosophy, Science and Culture of China</span></p>
       </header>
-      <div class="page-main__wrapper">
-        <div class="page-content">
-          <section class="content__section headings">
+      <div class="page-wrapper">
+        <div class="page-content-wrapper">
+          <aside class="page-sidebar page-sidebar--closed page-sidebar--nojs">
             <header class="content__header">
               <h2 class="content__title">Journal Headings</h2>
-              <button class="list__toggle" type="button"><span class="visually-hidden">Open list</span></button>
+              <button class="list__toggle list__toggle--up" type="button"><span class="visually-hidden">Open list</span></button>
             </header>
             <ul class="headings__list">
               <li class="headings__item">
@@ -183,82 +184,84 @@
                 <a href="#">Reviews (2)</a>
               </li>
             </ul>
-          </section>
-          <section class="content__section headings__section">
-            <div class="headings__wrapper">
-              <section class="headings__content">
-                <h3 class="headings__title">Ukrainians in Shanghai (1930–1940)</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Shevchenko O.</a> Ukrainians in Shanghai (1930–1940). <span class="headings__info--light">2018 ;(2):73-98.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">History of Development of Chinese Tea Tradition, Ways of its Distribution and Adaptation in Other Countries</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Khristolyubova Y.</a> History of Development of Chinese Tea Tradition, Ways of its Distribution and Adaptation in Other Countries.<span class="headings__info--light">2018 ;(2):61-72.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">The emergence and development of the state exams system of ancient China</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Urusov V. </a> The emergence and development of the state exams system of ancient China.<span class="headings__info--light"> 2018 ;(2):52-60.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">Chinese Studies on the Pages of the Journal “Tht Far East” 1938–1939</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Lakh R. </a>Chinese Studies on the Pages of the Journal “Tht Far East” 1938–1939. <span class="headings__info--light"> 2018 ;(2):35-51.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">The Historical Stages of the Development of Phenomenology in China</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Kiktenko V.</a> The Historical Stages of the Development of Phenomenology in China. <span class="headings__info--light">2018 ;(2):15-34.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">The Problem of Freedom in the Philosophy of Zhuangzi</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Kapranov S. </a>The Problem of Freedom in the Philosophy of Zhuangzi. <span class="headings__info--light">The Problem of Freedom in the Philosophy of Zhuangzi. </span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">Chinese Citizens in Revolutionary Events in Ukraine (1917–1921)</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Shevchenko O. </a>Chinese Citizens in Revolutionary Events in Ukraine (1917–1921). <span class="headings__info--light">2018 ;(1):5-16.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-              <section class="headings__content">
-                <h3 class="headings__title">Reforms of Shang Yang and the Past of the State of Qin of Warring States Period. Views by Leiden School of Sinology</h3>
-                <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Koshovyi S. </a>Reforms of Shang Yang and the Past of the State of Qin of Warring States Period. Views by Leiden School of Sinology. <span class="headings__info--light">2015 ;(1-2):11-18.</span></p>
-                <a class="content__link" href="#">Read more</a>
-              </section>
-            </div>
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <a class="pagination__link--arrow" title="Go to previous page">
-                  <svg class="pagination__arrow">
-                    <use xlink:href="#arrow-left"></use>
-                  </svg>
-                </a> 
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link pagination__link--active" href="#" title="Go to page 1">1</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#" title="Go to page 2">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#" title="Go to page 3">3</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#" title="Go to page 4">4</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#" title="Go to page 5">5</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link--arrow" href="#" title="Go to last page">
-                  <svg class="pagination__arrow pagination__arrow--active">
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </section>
+          </aside>
+          <div class="page-content">
+            <section class="content__section headings__section">
+              <div class="content__wrapper">
+                <section class="headings__content">
+                  <h3 class="headings__title">Ukrainians in Shanghai (1930–1940)</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Shevchenko O.</a> Ukrainians in Shanghai (1930–1940). <span class="headings__info--light">2018 ;(2):73-98.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">History of Development of Chinese Tea Tradition, Ways of its Distribution and Adaptation in Other Countries</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Khristolyubova Y.</a> History of Development of Chinese Tea Tradition, Ways of its Distribution and Adaptation in Other Countries.<span class="headings__info--light">2018 ;(2):61-72.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">The emergence and development of the state exams system of ancient China</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Urusov V. </a> The emergence and development of the state exams system of ancient China.<span class="headings__info--light"> 2018 ;(2):52-60.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">Chinese Studies on the Pages of the Journal “Tht Far East” 1938–1939</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Lakh R. </a>Chinese Studies on the Pages of the Journal “Tht Far East” 1938–1939. <span class="headings__info--light"> 2018 ;(2):35-51.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">The Historical Stages of the Development of Phenomenology in China</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Kiktenko V.</a> The Historical Stages of the Development of Phenomenology in China. <span class="headings__info--light">2018 ;(2):15-34.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">The Problem of Freedom in the Philosophy of Zhuangzi</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Kapranov S. </a>The Problem of Freedom in the Philosophy of Zhuangzi. <span class="headings__info--light">The Problem of Freedom in the Philosophy of Zhuangzi. </span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">Chinese Citizens in Revolutionary Events in Ukraine (1917–1921)</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Shevchenko O. </a>Chinese Citizens in Revolutionary Events in Ukraine (1917–1921). <span class="headings__info--light">2018 ;(1):5-16.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+                <section class="headings__content">
+                  <h3 class="headings__title">Reforms of Shang Yang and the Past of the State of Qin of Warring States Period. Views by Leiden School of Sinology</h3>
+                  <p class="headings__info"><sup>1</sup><a class="headings__link" href="#">Koshovyi S. </a>Reforms of Shang Yang and the Past of the State of Qin of Warring States Period. Views by Leiden School of Sinology. <span class="headings__info--light">2015 ;(1-2):11-18.</span></p>
+                  <a class="content__link" href="#">Read more</a>
+                </section>
+              </div>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link--arrow" title="Go to previous page">
+                    <svg class="pagination__arrow">
+                      <use xlink:href="#arrow-left"></use>
+                    </svg>
+                  </a> 
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#" title="Go to page 1">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" title="Go to page 2">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" title="Go to page 3">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" title="Go to page 4">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" title="Go to page 5">5</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link--arrow" href="#" title="Go to last page">
+                    <svg class="pagination__arrow pagination__arrow--active">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
         <footer class="page-footer">
           <ul class="page-footer__list issn-list">
