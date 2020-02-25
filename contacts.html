@@ -16,6 +16,7 @@
         <a class="site-header__logo" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+            <source media="(min-width: 830px)" srcset="img/logo-desktop.png">
             <img class="site-header__logo-image" src="img/logo-mobile.png" width="176" height="39" alt="Chinese studies Journal logo">
           </picture>
         </a>
@@ -112,16 +113,16 @@
       </div>
     </header>
     <main class="page-main">
-      <header class="page-main__header">
-        <h1 class="page-main__title">Contacts</h1>
+      <header class="page-header">
+        <h1 class="page-header__title">Contacts</h1>
         <p class="breadcrumb"><a href="index.html">Home</a> / <span> Contacts </span></p>
       </header>
-      <div class="page-main__wrapper">
-        <div class="page-content">
-          <section class="content__section headings">
+      <div class="page-wrapper">
+        <div class="page-content-wrapper">
+          <aside class="page-sidebar page-sidebar--closed page-sidebar--nojs">
             <header class="content__header">
               <h2 class="content__title">Journal Headings</h2>
-              <button class="list__toggle" type="button"><span class="visually-hidden">Open list</span></button>
+              <button class="list__toggle list__toggle--up" type="button"><span class="visually-hidden">Open list</span></button>
             </header>
             <ul class="headings__list">
               <li class="headings__item">
@@ -167,28 +168,30 @@
                 <a href="#">Reviews (2)</a>
               </li>
             </ul>
-          </section>
-          <section class="content__section contacts__section">
-            <section class="contacts__content">
-              <p class="contacts__info">
-                <b>Address:</b> <br>
-                01001, Ukraine, Kyiv, Grushevsky str., 4, <br class="inline-nobr">
-                office 211
-              </p>
-              <p class="contacts__info">
-                <b>Tel.:</b> <br>
-                <a class="contacts__link" href="tel:+380%2044%20353%207286" target="_blank">+38 (044) 353-72-86</a> (editor-in-chief),<br>
-                <a class="contacts__link" href="tel:+380%2044%20353%207285" target="_blank">+38 (044) 353-72-85</a> (editorial office)
-              </p>
-              <p class="contacts__info">
-                <b>Email:</b> <a class="contacts__link" href="mailto:info@sinologist.com.ua" target="_blank">info@sinologist.com.ua</a>
-              </p>
-              <figure class="contacts__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.497122830787!2d30.52539925136503!3d50.45046688335352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51f40c4a9d%3A0x641636afcd35cff6!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCT0YDRg9GI0LXQstGB0YzQutC-0LPQviwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1581396679682!5m2!1suk!2sua" width="348" height="385" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <figcaption class="visually-hidden">Editorial office of Chinese studies Journal on a city map, Kyiv, Grushevsky str., 4.</figcaption>
-              </figure> 
+          </aside>
+          <div class="page-content">
+            <section class="content__section contacts__section">
+              <section class="contacts__content">
+                <p class="contacts__info">
+                  <b>Address:</b> <br>
+                  01001, Ukraine, Kyiv, Grushevsky str., 4, <br class="inline-nobr">
+                  office 211
+                </p>
+                <p class="contacts__info">
+                  <b>Tel.:</b> <br>
+                  <a class="contacts__link" href="tel:+380%2044%20353%207286" target="_blank">+38 (044) 353-72-86</a> (editor-in-chief),<br>
+                  <a class="contacts__link" href="tel:+380%2044%20353%207285" target="_blank">+38 (044) 353-72-85</a> (editorial office)
+                </p>
+                <p class="contacts__info">
+                  <b>Email:</b> <a class="contacts__link" href="mailto:info@sinologist.com.ua" target="_blank">info@sinologist.com.ua</a>
+                </p>
+                <figure class="contacts__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.497122830787!2d30.52539925136503!3d50.45046688335352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51f40c4a9d%3A0x641636afcd35cff6!2z0LLRg9C70LjRhtGPINCc0LjRhdCw0LnQu9CwINCT0YDRg9GI0LXQstGB0YzQutC-0LPQviwgNCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1581396679682!5m2!1suk!2sua" width="348" height="385" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  <figcaption class="visually-hidden">Editorial office of Chinese studies Journal on a city map, Kyiv, Grushevsky str., 4.</figcaption>
+                </figure> 
+              </section>
             </section>
-          </section>
+          </div>
         </div>
         <footer class="page-footer">
           <ul class="page-footer__list issn-list">
