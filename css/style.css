@@ -1115,7 +1115,6 @@ main {
   
   /* .page-sidebar__title::before { */
     /* display: none; */
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1150,7 +1149,7 @@ main {
   height: 216px;
   background: url("../img/chinese-lanterns.jpg") right no-repeat;
   background-size: cover;
-  overflow: hibben;
+  overflow: hidden;
   
   background-color: rgba(255,0,0,0.5);
 }
@@ -1178,13 +1177,6 @@ main {
   .curent-issue {
     width: 270px;
   }
-}
-
-.description__picture {
-  display: block;
-  width: 368px;
-  height: 216px;
-  overflow: hibben;
 }
 
 .description__image {
@@ -1246,11 +1238,6 @@ main {
 }
 
 @media (min-width: 830px) {
-  .description__picture {
-    width: 470px;
-    height: 216px;
-  }
-  
   .description__text {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1307,7 +1294,7 @@ main {
   
   font-size: 14px;
   line-height: 20px;
-  color: ##111111;
+  color: #111111;
   
   border-collapse: collapse;
 }
@@ -1552,7 +1539,7 @@ main {
   
   background: url("../img/map.jpg") right no-repeat;
   background-size: cover;
-  overflow: hibben;  
+  overflow: hidden;  
 }
 
 @media (min-width: 830px) {
