@@ -1195,11 +1195,14 @@ main {
 
 .content__link {
   display: inline-block;
-  padding: 7px 28px;
+  box-sizing: border-box;
+  min-width: 140px;
+  padding: 7px 25px;
   border: 1px solid #9b0c23;
   border-radius: 20px;
   
   text-decoration: none;
+  text-align: center;
   
   font-size: 16px;
   line-height: 24px;
@@ -1208,7 +1211,8 @@ main {
 
 @media (min-width: 830px) {
   .content__link {
-    padding: 4px 21px;
+    min-width: 130px;
+    padding: 4px 20px;
     padding-bottom: 5px;
     border-radius: 17.5px;
     
@@ -2120,9 +2124,8 @@ main {
 }
 
 .content__link--direct {
-  /* position: relative; */
-  display: block;
-  box-sizing: border-box;
+  /* display: block; */
+  /* box-sizing: border-box; */
   width: 140px;
   padding-left: 20px;
   padding-right: 40px;
@@ -2135,8 +2138,8 @@ main {
 }
 
 .content__link--reverse {
-  display: block;
-  box-sizing: border-box;
+  /* display: block; */
+  /* box-sizing: border-box; */
   width: 140px;
   padding-left: 20px;
   padding-right: 40px;
@@ -2168,6 +2171,7 @@ main {
 @media (min-width: 830px) {
   .content__link--direct {
     width: auto;
+    min-width: auto;
     padding-left: 14px;
     padding-right: 30px;
     
@@ -2177,6 +2181,7 @@ main {
   
   .content__link--reverse {
     width: auto;
+    min-width: auto;
     padding-left: 14px;
     padding-right: 30px;
     
