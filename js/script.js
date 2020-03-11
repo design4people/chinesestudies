@@ -14,20 +14,6 @@ navToggle.addEventListener('click', function() {
 });
 
 
-var sublistArchive = document.querySelector('.sublist-archive');
-var archiveToggle = document.querySelector('.sublist-archive__toggle');
-
-archiveToggle.addEventListener('click', function() {
-  if (sublistArchive.classList.contains('sublist-archive--closed')) {
-    sublistArchive.classList.remove('sublist-archive--closed');
-    sublistArchive.classList.add('sublist-archive--opened');
-  } else {
-    sublistArchive.classList.add('sublist-archive--closed');
-    sublistArchive.classList.remove('sublist-archive--opened');
-  }
-});
-
-
 var sublistForauthors = document.querySelector('.sublist-forauthors');
 var forauthorsToggle = document.querySelector('.sublist-forauthors__toggle');
 
@@ -54,5 +40,19 @@ listToggle.addEventListener('click', function() {
   } else {
     pageSidebar.classList.add('page-sidebar--closed');
     pageSidebar.classList.remove('page-sidebar--opened');
+  }
+});
+
+
+var sublistArchive = document.querySelector('.sublist-archive');
+var archiveToggle = document.querySelector('.sublist-archive__toggle');
+
+archiveToggle.addEventListener('click', function() {
+  if (sublistArchive.classList.contains('sublist-archive--closed')) {
+    sublistArchive.classList.remove('sublist-archive--closed');
+    sublistArchive.classList.add('sublist-archive--opened');
+  } else {
+    sublistArchive.classList.add('sublist-archive--closed');
+    sublistArchive.classList.remove('sublist-archive--opened');
   }
 });
