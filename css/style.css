@@ -291,7 +291,7 @@ img {
   }
 }
 
-.sublist-arhive__toggle,
+.sublist-archive__toggle,
 .sublist-forauthors__toggle {
   position: absolute;
   top: 0;
@@ -306,12 +306,12 @@ img {
   cursor: pointer;
 }
 
-.sublist-arhive__toggle:active,
+.sublist-archive__toggle:active,
 .sublist-forauthors__toggle:active {
   background-color: #e3d4aa;
 }
 
-.sublist-arhive--closed .sublist-arhive__toggle,
+.sublist-archive--closed .sublist-archive__toggle,
 .sublist-forauthors--closed .sublist-forauthors__toggle {
   background-image: url("../img/arrow-point-down.svg");
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ img {
   background-size: 24px 100%;
 }
 
-.sublist-arhive--opened .sublist-arhive__toggle,
+.sublist-archive--opened .sublist-archive__toggle,
 .sublist-forauthors--opened .sublist-forauthors__toggle {
   background-image: url("../img/arrow-point-up.svg");
   background-repeat: no-repeat;
@@ -328,7 +328,7 @@ img {
 }
 
 @media(min-width: 1200px) {
-  .sublist-arhive__toggle,
+  .sublist-archive__toggle,
   .sublist-forauthors__toggle {
     display: none;
   }
@@ -343,12 +343,12 @@ img {
   /* padding-left: 58px; */
 }
 
-.sublist-arhive--closed .nav-sublist,
+.sublist-archive--closed .nav-sublist,
 .sublist-forauthors--closed .nav-sublist {
   display: none;
 }
 
-.sublist-arhive--opened .nav-sublist,
+.sublist-archive--opened .nav-sublist,
 .sublist-forauthors--opened .nav-sublist {
   display: block;
 }
@@ -384,7 +384,7 @@ img {
     /* box-shadow: 0 1px 5px -3px #786d59 ; */
   }
   
-  .nav-list__item .sublist-arhive__toggle,
+  .nav-list__item .sublist-archive__toggle,
   .nav-list__item .sublist-forauthors__toggle {
     display: none;
   }
@@ -917,7 +917,8 @@ main {
     padding-bottom: 0;
   }
   
-  .start-page .headings__list::after {
+  .start-page .headings__list::after,
+  .archive-page .headings__list::after {
     top: 0;
     right: 0;
     width: 1px;
@@ -926,6 +927,10 @@ main {
   
   .inner-page .headings__list::after {
     display: none;
+  }
+  
+  .archive-page .headings__list::after {
+    display: block;
   }
 }
 
@@ -1378,14 +1383,14 @@ main {
   }
   
   .defenition__data {
-    width: 560px;
+    width: 565px;
     padding-left: 0;
     padding-right: 15px;
   }
   
   .defenition__abstract .defenition__data {
     padding-left: 0;
-    padding-right: 13px;
+    padding-right: 15px;
   }
 }
 
@@ -1467,18 +1472,19 @@ main {
   .article .content__section {
     margin: 0;
     padding-top: 50px;
-   }
+  }
 }
 
 @media (min-width: 1200px) {
   .article .content__section {
     margin: 0 15px;
-   }
+  }
 }
 
 .contacts__section,
 .headings__section,
-.search__section {
+.search__section,
+.archive__section {
   padding-bottom: 50px;
 }
 
@@ -1493,20 +1499,23 @@ main {
 @media (min-width: 1200px) {
   .contacts__section,
   .headings__section,
-  .search__section {
+  .search__section,
+  .archive__section {
     position: relative;
     margin-top: 115px;
     padding-bottom: 0;
   }
 }
 
-.contacts__content {
+.contacts__content,
+.archive__content {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
 }
 
-.contacts__info {
+.contacts__info,
+.archive__info {
   margin: 0;
   padding: 25px 0;
   
@@ -1543,17 +1552,20 @@ main {
 }
 
 @media (min-width: 830px) {
-  .contacts__content {
+  .contacts__content,
+  .archive__content {
     font-size: 14px;
     line-height: 30px;
   }
   
-  .contacts__info {
+  .contacts__info,
+  .archive__info {
     margin: 0;
     padding: 15px 0;
   }
   
-  .contacts__info:first-child {
+  .contacts__info:first-child,
+  .archive__info:first-child {
     padding-top: 0;
     box-shadow: none;
   }
@@ -1562,7 +1574,8 @@ main {
     display: none;
   }
   
-  .contacts__info b {
+  .contacts__info b,
+  .archive__info b {
     font-size: 16px;
   }
   
@@ -1590,10 +1603,33 @@ main {
     background-color: #e5e4e4;
   }
   
-  .contacts__info:first-child {
+  .contacts__info:first-child,
+  .archive__info:first-child {
     padding-top: 0;
     box-shadow: none;
   }
+}
+
+@media (min-width: 830px) {
+  .archive-page .page-content {
+    display: block;
+  }
+}
+
+.archive__content ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.archive__content li {
+  font-weight: 700;
+}
+
+.archive__content li a {
+  text-decoration: none;
+  color: #9b0c23;
 }
 
 .headings__content {
