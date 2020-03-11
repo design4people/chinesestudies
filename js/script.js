@@ -14,16 +14,16 @@ navToggle.addEventListener('click', function() {
 });
 
 
-var sublistArhive = document.querySelector('.sublist-arhive');
-var arhiveToggle = document.querySelector('.sublist-arhive__toggle');
+var sublistArchive = document.querySelector('.sublist-archive');
+var archiveToggle = document.querySelector('.sublist-archive__toggle');
 
-arhiveToggle.addEventListener('click', function() {
-  if (sublistArhive.classList.contains('sublist-arhive--closed')) {
-    sublistArhive.classList.remove('sublist-arhive--closed');
-    sublistArhive.classList.add('sublist-arhive--opened');
+archiveToggle.addEventListener('click', function() {
+  if (sublistArchive.classList.contains('sublist-archive--closed')) {
+    sublistArchive.classList.remove('sublist-archive--closed');
+    sublistArchive.classList.add('sublist-archive--opened');
   } else {
-    sublistArhive.classList.add('sublist-arhive--closed');
-    sublistArhive.classList.remove('sublist-arhive--opened');
+    sublistArchive.classList.add('sublist-archive--closed');
+    sublistArchive.classList.remove('sublist-archive--opened');
   }
 });
 
@@ -42,7 +42,7 @@ forauthorsToggle.addEventListener('click', function() {
 });
 
 
-var pageSidebar  = document.querySelector('.page-sidebar');
+var pageSidebar = document.querySelector('.page-sidebar');
 var listToggle = document.querySelector('.list__toggle');
 
 pageSidebar.classList.remove('page-sidebar--nojs');
