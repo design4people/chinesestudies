@@ -176,6 +176,9 @@ img {
   .main-nav__wrapper {
     position: static;
     display: flex;
+    width: 770px;
+    
+    justify-content: space-between;
   }
 }
 
@@ -204,15 +207,14 @@ img {
 @media (min-width: 830px) {
   .nav-list {
     display: flex;
-    margin-right: 30px;
+    margin-left: -10px;
+    margin-right: 20px;
     padding-top: 10px;
   }
 }
 
 @media (min-width: 1200px) {
   .nav-list {
-    display: flex;
-    margin-right: 30px;
     padding-top: 50px;
   }
 }
@@ -1050,8 +1052,8 @@ main {
 }
 
 @media (min-width: 1200px) {
-  .content__section
-  ..article__section {
+  .content__section,
+  .article__section {
     margin: 50px 0;
     margin-right: 30px;
     padding-top: 0;
