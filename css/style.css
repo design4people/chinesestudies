@@ -914,8 +914,8 @@ main {
     position: relative;
   }
   
-  .headings__list::after,
-  .start-page .headings__list::after {
+  .headings__list::after
+   {
     content: "";
     position: absolute;
     right: 0;
@@ -938,20 +938,16 @@ main {
     padding-bottom: 0;
   }
   
-  .start-page .headings__list::after,
-  .archive-page .headings__list::after {
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: 100%;
-  }
-  
-  .inner-page .headings__list::after {
+  .headings__list::after {
     display: none;
   }
   
   .archive-page .headings__list::after {
     display: block;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
   }
 }
 
@@ -1213,6 +1209,19 @@ main {
   
   .curent-issue {
     width: 270px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .start-page .description__content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    
+    background-color: #e5e4e4;
   }
 }
 
