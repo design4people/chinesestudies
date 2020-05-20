@@ -31,18 +31,23 @@ forauthorsToggle.addEventListener('click', function() {
 var pageSidebar = document.querySelector('.page-sidebar');
 var listToggle = document.querySelector('.list__toggle');
 
-pageSidebar.classList.remove('page-sidebar--nojs');
+if (pageSidebar) 
+{
+  pageSidebar.classList.remove('page-sidebar--nojs');
+}
 
-listToggle.addEventListener('click', function() {
-  if (pageSidebar.classList.contains('page-sidebar--closed')) {
-    pageSidebar.classList.remove('page-sidebar--closed');
-    pageSidebar.classList.add('page-sidebar--opened');
-  } else {
-    pageSidebar.classList.add('page-sidebar--closed');
-    pageSidebar.classList.remove('page-sidebar--opened');
-  }
-});
-
+if (listToggle)
+{
+  listToggle.addEventListener('click', function() {
+    if (pageSidebar.classList.contains('page-sidebar--closed')) {
+      pageSidebar.classList.remove('page-sidebar--closed');
+      pageSidebar.classList.add('page-sidebar--opened');
+    } else {
+      pageSidebar.classList.add('page-sidebar--closed');
+      pageSidebar.classList.remove('page-sidebar--opened');
+    }
+  });
+}
 
 var sublistArchive = document.querySelector('.sublist-archive');
 var archiveToggle = document.querySelector('.sublist-archive__toggle');
