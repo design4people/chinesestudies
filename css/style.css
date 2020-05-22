@@ -1263,23 +1263,47 @@ main {
   }
 }
 
-.description__text {
+.description__text,
+.description__content p {
   margin: 0;
-  margin-top: 19px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   
   font-size: 16px;
-  font-weight: bold;
   line-height: 30px;
 }
 
+.description__content p:first-child {
+  margin-top: 25px;
+}
+
+.description__content .content__link, 
+.curent-issue__content .content__link {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.description__content a {
+  color: #9b0c23;
+}
+
+.description__text {
+  font-weight: 700;
+}
+
+.description__content b,
+.description__content strong {
+  font-weight: 700;
+}
+
+.description__content .normal,
 .description__text--light {
   font-weight: 300;
 }
 
 .curent-issue__cover {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   padding: 23px;
   width: 270px;
@@ -1289,15 +1313,14 @@ main {
 }
 
 @media (min-width: 830px) {
-  .description__text {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+  .description__text,
+  .description__content p {
     font-size: 14px;
   }
-  
-  .curent-issue__cover {
-    margin-bottom: 49px;
+
+  .curent-issue__cover,
+  .issue__cover {
+    margin-bottom: 20px;
   }
 }
 
