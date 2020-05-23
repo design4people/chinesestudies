@@ -1198,7 +1198,8 @@ main {
    box-shadow: none;
   }
   
-  .description {
+  .description,
+  .contents {
     width: 470px;
     margin-right: 30px;
   }
@@ -1212,7 +1213,8 @@ main {
     height: 216px;
   }
   
-  .curent-issue {
+  .curent-issue,
+  .cover {
     width: 270px;
   }
 }
