@@ -1265,8 +1265,16 @@ main {
   }
 }
 
+.contents__list,
+.cover__content {
+  font-size: 16px;
+  line-height: 30px;
+}
+
 .description__text,
-.description__content p {
+.description__content p,
+.contents__list p,
+.cover__content p {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 10px;
