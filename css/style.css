@@ -1303,7 +1303,8 @@ main {
   font-weight: 300;
 }
 
-.curent-issue__cover {
+.curent-issue__cover,
+.issue__cover {
   margin: 0;
   margin-bottom: 10px;
   box-sizing: border-box;
