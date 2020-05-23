@@ -1169,13 +1169,19 @@ main {
 }
 
 .description,
-.curent-issue {
+.contents,
+.curent-issue,
+.cover {
   box-shadow: 0 -1px 0 0 #e5e4e4;
 }
 
 .description__content {
-  position: relative;
   padding-top: 216px;
+}
+
+.description__content,
+.contents__list {
+  position: relative;
 }
 
 .description__content::before {
@@ -1194,7 +1200,9 @@ main {
 
 @media (min-width: 830px) {
   .description,
-  .curent-issue {
+  .contents,
+  .curent-issue,
+  .cover {
    box-shadow: none;
   }
   
@@ -1220,7 +1228,8 @@ main {
 }
 
 @media (min-width: 1200px) {
-  .start-page .description__content::after {
+  .start-page .description__content::after,
+  .contents__list::after {
     content: "";
     position: absolute;
     top: 0;
