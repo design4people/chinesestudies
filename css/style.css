@@ -1180,7 +1180,7 @@ main {
 }
 
 .description__content,
-.contents__list {
+.contents__content {
   position: relative;
 }
 
@@ -1229,7 +1229,7 @@ main {
 
 @media (min-width: 1200px) {
   .start-page .description__content::after,
-  .contents__list::after {
+  .contents__content::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1274,15 +1274,21 @@ main {
   }
 }
 
-.contents__list,
+.description__content,
+.contents__content,
+.curent-issue__content,
 .cover__content {
   font-size: 16px;
   line-height: 30px;
 }
 
+.contents__content li {
+  margin: 25px 0;
+}
+
 .description__text,
 .description__content p,
-.contents__list p,
+.contents__content p,
 .cover__content p {
   margin: 0;
   margin-top: 10px;
@@ -1337,7 +1343,7 @@ main {
   .description__content p {
     font-size: 14px;
   }
-
+  
   .curent-issue__cover,
   .issue__cover {
     margin-bottom: 20px;
