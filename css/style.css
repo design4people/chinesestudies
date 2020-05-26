@@ -1350,9 +1350,16 @@ main {
 }
 
 @media (min-width: 830px) {
-  .description__text,
-  .description__content p {
+  .description__content,
+  .contents__content,
+  .curent-issue__content,
+  .cover__content {
     font-size: 14px;
+  }
+  
+  .contents__content h3 {
+    font-size: 16px;
+    line-height: 20px;
   }
   
   .curent-issue__cover,
